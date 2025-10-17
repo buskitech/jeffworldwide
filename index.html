@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEFFWORLDWIDE </title>
+    <title>JEFFWORLDWIDE - Premium Luxury Cars</title>
     <meta name="description" content="JEFFWORLDWIDE - Your trusted dealer in premium luxury cars. Brand new, foreign used, and Nigerian used vehicles. Car financing available.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Header -->
@@ -16,14 +16,14 @@
         <nav class="nav">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="images/jeffworldwide-logo.jpg" alt="JEFFWORLDWIDE Logo" class="logo-img">
+                    <img src="images/jeffworldwide-logo.jpg" alt="JEFFWORLDWIDE Logo" class="logo-img" width="120" height="40">
                 </div>
                 <div class="nav-menu">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#cars" class="nav-link">Cars</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#contact" class="nav-link">Contact</a>
-                    <button class="theme-toggle" id="themeToggle">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                         <svg class="theme-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="5"/>
                             <line x1="12" y1="1" x2="12" y2="3"/>
@@ -37,20 +37,30 @@
                         </svg>
                     </button>
                 </div>
-                <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#cars" class="mobile-nav-link">Cars</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-background">
-                <img src="images/hero-showroom-1.jpg" alt="Luxury Car Showroom" class="hero-image">
+                <img src="images/hero-showroom-1.jpg" alt="Luxury Car Showroom" class="hero-image" loading="eager">
                 <div class="hero-overlay"></div>
             </div>
             <div class="hero-content">
@@ -147,7 +157,7 @@
                     <button class="btn btn-primary" onclick="orderOnWhatsApp('2024 Mercedes-Benz G-Wagon')">Order on WhatsApp</button>
                 </div>
                 <div class="featured-image">
-                    <img src="images/mercedes-g-wagon.jpg" alt="2024 Mercedes-Benz G-Wagon">
+                    <img src="images/mercedes-g-wagon.jpg" alt="2024 Mercedes-Benz G-Wagon" loading="lazy" width="600" height="400">
                 </div>
             </div>
         </div>
@@ -163,9 +173,9 @@
             
             <div class="cars-grid">
                 <!-- Car Card 1 -->
-                <div class="car-card" data-aos="fade-up">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/mercedes-g-wagon.jpg" alt="Mercedes-Benz G-Wagon">
+                        <img src="images/mercedes-g-wagon.jpg" alt="Mercedes-Benz G-Wagon" loading="lazy" width="400" height="250">
                         <div class="car-badge">Featured</div>
                     </div>
                     <div class="car-info">
@@ -182,9 +192,9 @@
                 </div>
 
                 <!-- Car Card 2 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/lamborghini-urus.jpg" alt="Lamborghini Urus">
+                        <img src="images/lamborghini-urus.jpg" alt="Lamborghini Urus" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Lamborghini Urus</h3>
@@ -200,9 +210,9 @@
                 </div>
 
                 <!-- Car Card 3 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/range-rover-autobiography.jpg" alt="Range Rover Autobiography">
+                        <img src="images/range-rover-autobiography.jpg" alt="Range Rover Autobiography" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Range Rover Autobiography</h3>
@@ -218,9 +228,9 @@
                 </div>
 
                 <!-- Car Card 4 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/lamborghini-urus-2.jpg" alt="Rolls-Royce Cullinan">
+                        <img src="images/lamborghini-urus-2.jpg" alt="Rolls-Royce Cullinan" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Rolls-Royce Cullinan</h3>
@@ -236,9 +246,9 @@
                 </div>
 
                 <!-- Car Card 5 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/hero-background.jpg" alt="Porsche 911 Turbo S">
+                        <img src="images/hero-background.jpg" alt="Porsche 911 Turbo S" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Porsche 911 Turbo S</h3>
@@ -254,9 +264,9 @@
                 </div>
 
                 <!-- Car Card 6 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/car-collection.jpg" alt="Ferrari 296 GTB">
+                        <img src="images/car-collection.jpg" alt="Ferrari 296 GTB" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Ferrari 296 GTB</h3>
@@ -272,9 +282,9 @@
                 </div>
 
                 <!-- Car Card 7 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/luxury-cars-display.png" alt="Lexus LX 600">
+                        <img src="images/luxury-cars-display.png" alt="Lexus LX 600" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Lexus LX 600</h3>
@@ -290,9 +300,9 @@
                 </div>
 
                 <!-- Car Card 8 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="700">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/dealership-showroom.jpg" alt="Toyota Land Cruiser 300">
+                        <img src="images/dealership-showroom.jpg" alt="Toyota Land Cruiser 300" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Toyota Land Cruiser 300</h3>
@@ -308,9 +318,9 @@
                 </div>
 
                 <!-- Car Card 9 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/mercedes-g-wagon.jpg" alt="BMW X7">
+                        <img src="images/mercedes-g-wagon.jpg" alt="BMW X7" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>BMW X7</h3>
@@ -326,9 +336,9 @@
                 </div>
 
                 <!-- Car Card 10 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="900">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/lamborghini-urus.jpg" alt="Audi RS Q8">
+                        <img src="images/lamborghini-urus.jpg" alt="Audi RS Q8" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Audi RS Q8</h3>
@@ -344,9 +354,9 @@
                 </div>
 
                 <!-- Car Card 11 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="1000">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/range-rover-autobiography.jpg" alt="Dodge Challenger Hellcat">
+                        <img src="images/range-rover-autobiography.jpg" alt="Dodge Challenger Hellcat" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Dodge Challenger Hellcat</h3>
@@ -362,9 +372,9 @@
                 </div>
 
                 <!-- Car Card 12 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="1100">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/car-collection.jpg" alt="Ford Mustang Shelby GT500">
+                        <img src="images/car-collection.jpg" alt="Ford Mustang Shelby GT500" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Ford Mustang Shelby GT500</h3>
@@ -380,9 +390,9 @@
                 </div>
 
                 <!-- Car Card 13 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="1200">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/luxury-cars-display.png" alt="Chevrolet Corvette Z06">
+                        <img src="images/luxury-cars-display.png" alt="Chevrolet Corvette Z06" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Chevrolet Corvette Z06</h3>
@@ -398,9 +408,9 @@
                 </div>
 
                 <!-- Car Card 14 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="1300">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/dealership-showroom.jpg" alt="Cadillac Escalade V">
+                        <img src="images/dealership-showroom.jpg" alt="Cadillac Escalade V" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Cadillac Escalade V</h3>
@@ -416,9 +426,9 @@
                 </div>
 
                 <!-- Car Card 15 -->
-                <div class="car-card" data-aos="fade-up" data-aos-delay="1400">
+                <div class="car-card">
                     <div class="car-image">
-                        <img src="images/hero-background.jpg" alt="Bentley Bentayga">
+                        <img src="images/hero-background.jpg" alt="Bentley Bentayga" loading="lazy" width="400" height="250">
                     </div>
                     <div class="car-info">
                         <h3>Bentley Bentayga</h3>
@@ -463,7 +473,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="images/dealership-showroom.jpg" alt="JEFFWORLDWIDE Showroom">
+                    <img src="images/dealership-showroom.jpg" alt="JEFFWORLDWIDE Showroom" loading="lazy" width="600" height="400">
                 </div>
             </div>
         </div>
@@ -500,7 +510,7 @@
                                 WhatsApp
                             </h4>
                             <div class="contact-links">
-                                <a href="https://wa.me/15551234567?text=Hello%20JEFFWORLDWIDE,%20I'm%20interested%20in%20your%20luxury%20cars" class="contact-link whatsapp-link" target="_blank">
+                                <a href="https://wa.me/15551234567?text=Hello%20JEFFWORLDWIDE,%20I'm%20interested%20in%20your%20luxury%20cars" class="contact-link whatsapp-link" target="_blank" rel="noopener">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.893 3.106"/>
                                     </svg>
@@ -518,7 +528,7 @@
                                 Social Media
                             </h4>
                             <div class="contact-links">
-                                <a href="https://instagram.com/jeffworldwide_" class="contact-link instagram-link" target="_blank">
+                                <a href="https://instagram.com/jeffworldwide_" class="contact-link instagram-link" target="_blank" rel="noopener">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                         <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
@@ -580,14 +590,5 @@
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true
-        });
-    </script>
 </body>
 </html>
-
